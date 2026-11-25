@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "upstream": "https://github.com/Starlight-Intelligence/starlight-agent-skills",
+  "revision": "1e5577124c7c8ff48fceaf66037e0d5723cb41cf",
+  "skills": {
+    "ai-coe-assessment": {
+      "owner": "local",
+      "path": "skills/ai-coe-assessment",
+      "license": "MIT",
+      "version": "0.1.0"
+    },
+    "claim-verification": {
+      "owner": "Starlight-Intelligence/starlight-agent-skills",
+      "path": "skills/research/claim-verification",
+      "license": "MIT",
+      "version": "0.1.0"
+    },
+    "arxiv-paper-to-brief": {
+      "owner": "Starlight-Intelligence/starlight-agent-skills",
+      "path": "skills/research/arxiv-paper-to-brief",
+      "license": "MIT",
+      "version": "0.1.0"
+    },
+    "capability-foundry": {
+      "owner": "Starlight-Intelligence/starlight-agent-skills",
+      "path": "skills/substrate/capability-foundry",
+      "license": "MIT",
+      "version": "0.1.0"
+    },
+    "social-repurposer": {
+      "owner": "Starlight-Intelligence/starlight-agent-skills",
+      "path": "skills/media/social-repurposer",
+      "license": "MIT",
+      "version": "0.1.0"
+    },
+    "simulation-lab-builder": {
+      "owner": "Starlight-Intelligence/starlight-agent-skills",
+      "path": "skills/education/simulation-lab-builder",
+      "license": "MIT",
+      "version": "0.1.0"
+    }
+  }
+}

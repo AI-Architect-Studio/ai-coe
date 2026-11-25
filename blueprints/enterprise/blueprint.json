@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "blueprint": "enterprise",
+  "mission": "Choose a bounded internal pilot and a named decision owner.",
+  "artifact": "pilot decision",
+  "review_question": "Which owner can stop the pilot and which evidence supports expansion?",
+  "role": "agents/governance-agent.md",
+  "template": "templates/engineering-team/README.md",
+  "priority_domains": [
+    "governance-security",
+    "founder-independence"
+  ],
+  "skills": [
+    "ai-coe-assessment",
+    "claim-verification",
+    "arxiv-paper-to-brief"
+  ]
+}

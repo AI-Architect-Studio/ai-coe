@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "blueprint": "creator",
+  "mission": "Choose an original production brief and credit its sources.",
+  "artifact": "creative brief",
+  "review_question": "Which original element will I prototype and who owns the source material?",
+  "role": "agents/builder-agent.md",
+  "template": "templates/creator-business/README.md",
+  "priority_domains": [
+    "creative-production",
+    "research-quality"
+  ],
+  "skills": [
+    "ai-coe-assessment",
+    "claim-verification",
+    "social-repurposer"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "levels": [
+    {
+      "level": 1,
+      "gate": "observed",
+      "label": "Fragmented experimentation",
+      "requirement": "one attributable observation"
+    },
+    {
+      "level": 2,
+      "gate": "repeated",
+      "label": "Repeatable individual workflows",
+      "requirement": "a separate repeat with a reusable method"
+    },
+    {
+      "level": 3,
+      "gate": "connected",
+      "label": "Connected intelligence environment",
+      "requirement": "a handoff between capabilities with persistent context"
+    },
+    {
+      "level": 4,
+      "gate": "governed",
+      "label": "Governed human–agent organization",
+      "requirement": "a reviewed decision with an owner, boundary and evaluation"
+    },
+    {
+      "level": 5,
+      "gate": "improved",
+      "label": "Continuously improving intelligence system",
+      "requirement": "comparable before/after results and a reviewed change"
+    }
+  ],
+  "domains": {
+    "human-expertise": "Record a decision, its alternatives and the human judgment that settled it.",
+    "agent-expertise": "Give one agent a bounded job with an input, deliverable and rejection example.",
+    "knowledge-context": "Save a source note with an owner, origin and retrieval exercise.",
+    "compute-economics": "Record provider, authorized access method, units, currency and accepted outcomes for one run.",
+    "engineering-execution": "Rebuild an artifact from a clean checkout and record the command and result.",
+    "research-quality": "Trace a claim to an exact source excerpt and record one disconfirming observation.",
+    "creative-production": "Produce a reviewable original artifact and document the rights of its inputs.",
+    "commercial-execution": "Tie a customer observation to a falsifiable offer experiment and a decision date.",
+    "governance-security": "Record the permitted data boundary, budget and approving owner for one mission.",
+    "organizational-learning": "Teach a second operator the workflow and inspect their independent outcome.",
+    "founder-independence": "Hand a mission to another operator and record every founder intervention."
+  }
+}

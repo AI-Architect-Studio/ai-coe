@@ -1,0 +1,2 @@
+Synthetic planning note, founder.
+We want to test demand before writing an integration.

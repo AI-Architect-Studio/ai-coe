@@ -1,0 +1,13 @@
+{
+  "state": "proposed",
+  "owner": "Example studio",
+  "change": "Collect a fresh disconfirming observation and repeat the decision.",
+  "learning_question": "What behavior would justify another week of investment?",
+  "baseline": 4,
+  "comparison": "Compare accepted decision, contradictory observations and operator interventions on the next run.",
+  "required_review": [
+    "source owner",
+    "workflow owner"
+  ],
+  "automatically_applied": false
+}

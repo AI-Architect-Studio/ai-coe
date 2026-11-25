@@ -1,0 +1,22 @@
+{
+  "interview-a": {
+    "file": "evidence/interview-a.txt",
+    "excerpt": "I lose the supplier decision every time somebody hands the project over.",
+    "sha256": "bd78a4687b7b63f8953b55ea11dda13e93d975b3395b75ec6e23ffb9f3fc05b8"
+  },
+  "interview-b": {
+    "file": "evidence/interview-b.txt",
+    "excerpt": "A new project owner spent Monday reconstructing why we picked that vendor.",
+    "sha256": "e757ae7e852155ab586b803d0ae732f2fdfefc1af61cfbd818a8cb440e6f771c"
+  },
+  "interview-c": {
+    "file": "evidence/interview-c.txt",
+    "excerpt": "Our existing issue template already handles most handoffs.",
+    "sha256": "40319654b2dc31d2fd32ac7a2a7788588ea6160cb5c7cbf6f64239e696de450e"
+  },
+  "studio-note": {
+    "file": "evidence/studio-note.txt",
+    "excerpt": "We want to test demand before writing an integration.",
+    "sha256": "6719ac4411ec1cf1ee7021ed401a8235200451e002ac1aea630f2c82de5e45a1"
+  }
+}

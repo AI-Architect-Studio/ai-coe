@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "disposition": "review experiment",
+  "lead": "handoff",
+  "candidates": 2,
+  "source_files_by_digest": 4,
+  "challenges_on_lead": [
+    "interview-c"
+  ],
+  "provider_calls": 0,
+  "provider_cost": {
+    "currency": "USD",
+    "amount": 0
+  },
+  "checks": {
+    "all_excerpts_match": true,
+    "lead_has_counterevidence": true,
+    "unique_lead_with_support": true
+  },
+  "human_review": "pending",
+  "model_quality_evaluated": false
+}

@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "blueprint": "founder",
+  "goal": "Decide whether to pilot a written decision handoff for small studios.",
+  "evidence_status": "owner-attested; excerpts and distinct artifact hashes checked",
+  "domains": {
+    "human-expertise": {
+      "level": 1,
+      "evidence": [
+        "studio-note"
+      ],
+      "next_evidence": "a separate repeat with a reusable method"
+    },
+    "agent-expertise": {
+      "level": null,
+      "evidence": [],
+      "next_evidence": "Give one agent a bounded job with an input, deliverable and rejection example."
+    },
+    "knowledge-context": {
+      "level": null,
+      "evidence": [],
+      "next_evidence": "Save a source note with an owner, origin and retrieval exercise."
+    },
+    "compute-economics": {
+      "level": null,
+      "evidence": [],
+      "next_evidence": "Record provider, authorized access method, units, currency and accepted outcomes for one run."
+    },
+    "engineering-execution": {
+      "level": null,
+      "evidence": [],
+      "next_evidence": "Rebuild an artifact from a clean checkout and record the command and result."
+    },
+    "research-quality": {
+      "level": null,
+      "evidence": [],
+      "next_evidence": "Trace a claim to an exact source excerpt and record one disconfirming observation."
+    },
+    "creative-production": {
+      "level": null,
+      "evidence": [],
+      "next_evidence": "Produce a reviewable original artifact and document the rights of its inputs."
+    },
+    "commercial-execution": {
+      "level": 1,
+      "evidence": [
+        "interview-a"
+      ],
+      "next_evidence": "a separate repeat with a reusable method"
+    },
+    "governance-security": {
+      "level": null,
+      "evidence": [],
+      "next_evidence": "Record the permitted data boundary, budget and approving owner for one mission."
+    },
+    "organizational-learning": {
+      "level": null,
+      "evidence": [],
+      "next_evidence": "Teach a second operator the workflow and inspect their independent outcome."
+    },
+    "founder-independence": {
+      "level": null,
+      "evidence": [],
+      "next_evidence": "Hand a mission to another operator and record every founder intervention."
+    }
+  },
+  "roadmap": [
+    {
+      "domain": "commercial-execution",
+      "collect": "a separate repeat with a reusable method"
+    },
+    {
+      "domain": "research-quality",
+      "collect": "Trace a claim to an exact source excerpt and record one disconfirming observation."
+    }
+  ],
+  "tool_review": {
+    "duplicate_labels": [],
+    "required_for_first_mission": [
+      "Python 3.10+"
+    ],
+    "declared": [
+      "Git",
+      "Codex"
+    ]
+  }
+}
