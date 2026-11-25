@@ -4,15 +4,15 @@ Tested on Linux x86_64, Python 3.12.14, Git 2.56.1, Node 24.22.3 and Codex CLI 0
 
 | Exercise | Observed result |
 | --- | --- |
-| Local test suite | 21 tests passed, including four profiles, exact checked example, replay from moved evidence, maturity gaps, contrary evidence, two competing activations, local edits, skill installation and registry constraints |
-| Intake and registry schemas | Both schemas passed Draft 2020-12 metaschema validation; both published fixtures passed their matching schema |
+| Local test suite | 25 tests passed, including four profiles, exact checked example, replay from moved evidence, maturity gaps, contrary evidence, two competing activations, local edits, skill installation registry constraints, human-review preservation, comparable measurements and detection of changed artifacts |
+| Intake and registry schemas | The intake, registry and assessment-result schemas passed Draft 2020-12 metaschema validation; their published fixtures passed the matching schemas |
 | Synthetic founder activation | Two candidate actions, four source digests, one contrary interview, proposed handoff pilot, pending owner sign-off. Fourteen files written after approval |
 | Independent changed-input review | Reclassifying one interview as contrary evidence changed the disposition to resolve conflicting evidence; the reviewer controlled sign-off |
 | Repository selection with genuine source objects | Three fact records tied to six existing governance, operating-model and role files supported extension; absence of a baseline LICENSE supplied counterevidence. Selected experiment: contribute to the existing owner under explicit license scope |
 | Codex host | Six project-local skills enabled and discovered via app-server; zero model turns. Five upstream goldens are included in the full upstream gate of 25 fixtures |
 | Commerce and compute probes | A local fixture produced a EUR 120.00 quote draft with approval required, repeated idempotently and outbound disabled. The harness passed 22 deterministic checker fixtures |
 | Academy bridge | Seven upstream practice-record checks passed. No learner credential or human pilot was issued |
-| Legacy vendor drift check | Existing check skipped after HTTP 404 for its old plugin branch. No vendor match is claimed |
+| Legacy vendor drift check | Existing check skipped after HTTP 404 for its old plugin branch. Independent comparison to current upstream main at `1b924d5` found two of four files match (SYSTEM and WORKFLOW); the team roster and SOP differ. Updating the mirror needs review of the new role boundaries |
 
 ### Reproduce
 

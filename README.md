@@ -37,6 +37,7 @@ The generated `.ai-coe/` directory contains the configuration, role, baseline, d
 | --- | --- |
 | Inspect the decision rights and evidence checks | [Architecture](ARCHITECTURE.md) · [Security and data ownership](SECURITY.md) |
 | Select a skill or infrastructure dependency | [Dependency inventory](registry/capabilities.json) · [Codex installation](integrations/codex/README.md) |
+| Compare two reviewed runs | [Record an owner decision and compare time and interventions](docs/mission-review.md) |
 | Assess eleven capabilities without a vanity score | [Assessment method](assessments/README.md) |
 | Develop someone else's ability to run the mission | [Curriculum and facilitator materials](curriculum/README.md) |
 | Distinguish installable work, services and planned products | [Portfolio and offers](docs/portfolio-and-offers.md) · [Market comparison](docs/market-position.md) |

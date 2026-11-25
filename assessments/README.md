@@ -15,3 +15,5 @@ The [rubric](rubric.json) supplies domain-specific actions for all eleven capabi
 In the [founder intake](../examples/founder/input.json), a customer interview and a founder decision note earn level 1 for commercial execution and human expertise. Nine domains stay unknown. The synthetic operators have demonstrated neither a second use nor an accepted business outcome. Select evidence dated after the first attempt to support a repeat. An improvement claim should name task, denominator, measurement window, comparable conditions and the approving reviewer.
 
 The [intake JSON Schema](../schemas/intake.schema.json) defines the wire format. Runtime checks additionally enforce source containment, matching excerpts, candidate/source references, duplicate-key rejection and digest-based evidence counts.
+
+Consumers can validate the emitted report against the [assessment result schema](../schemas/assessment-result.schema.json). The [example baseline](../examples/founder/workspace/assessments/baseline.json) is byte-checked by the activation tests.

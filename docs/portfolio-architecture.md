@@ -87,3 +87,5 @@ Observed on Linux, November 25, 2026, with Python 3.12.14, Node 24.22.3 and npm 
   "model_calls": 0
 }
 ```
+
+The [Living Design capability-map playbook](https://github.com/Starlight-Intelligence/starlight-design-intelligence/blob/ac43168bb58587c4b92b84f05a8b2bab8e360df5/plugins/starlight-living-design/assets/living-design/contracts/playbooks/capability-map/PLAYBOOK.md) informs the sequence from role to bounded capability to named handoff. Its upstream status is proposal. The release diagram follows the [CoE brand pack](https://github.com/Starlight-Intelligence/starlight-design-intelligence/blob/ac43168bb58587c4b92b84f05a8b2bab8e360df5/brand-packs/ai-coe/DESIGN.md); proprietary art remains subject to separate rights.

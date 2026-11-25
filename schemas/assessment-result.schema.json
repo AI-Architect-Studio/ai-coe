@@ -1,0 +1,176 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:starlight:coe:assessment-result:1",
+  "$defs": {
+    "axis": {
+      "type": "object",
+      "properties": {
+        "level": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1,
+          "maximum": 5
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "next_evidence": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "level",
+        "evidence",
+        "next_evidence"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "type": "object",
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "blueprint": {
+      "enum": [
+        "personal",
+        "creator",
+        "founder",
+        "enterprise"
+      ]
+    },
+    "goal": {
+      "type": "string"
+    },
+    "evidence_status": {
+      "type": "string"
+    },
+    "domains": {
+      "type": "object",
+      "properties": {
+        "human-expertise": {
+          "$ref": "#/$defs/axis"
+        },
+        "agent-expertise": {
+          "$ref": "#/$defs/axis"
+        },
+        "knowledge-context": {
+          "$ref": "#/$defs/axis"
+        },
+        "compute-economics": {
+          "$ref": "#/$defs/axis"
+        },
+        "engineering-execution": {
+          "$ref": "#/$defs/axis"
+        },
+        "research-quality": {
+          "$ref": "#/$defs/axis"
+        },
+        "creative-production": {
+          "$ref": "#/$defs/axis"
+        },
+        "commercial-execution": {
+          "$ref": "#/$defs/axis"
+        },
+        "governance-security": {
+          "$ref": "#/$defs/axis"
+        },
+        "organizational-learning": {
+          "$ref": "#/$defs/axis"
+        },
+        "founder-independence": {
+          "$ref": "#/$defs/axis"
+        }
+      },
+      "required": [
+        "human-expertise",
+        "agent-expertise",
+        "knowledge-context",
+        "compute-economics",
+        "engineering-execution",
+        "research-quality",
+        "creative-production",
+        "commercial-execution",
+        "governance-security",
+        "organizational-learning",
+        "founder-independence"
+      ],
+      "additionalProperties": false
+    },
+    "roadmap": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "domain": {
+            "enum": [
+              "human-expertise",
+              "agent-expertise",
+              "knowledge-context",
+              "compute-economics",
+              "engineering-execution",
+              "research-quality",
+              "creative-production",
+              "commercial-execution",
+              "governance-security",
+              "organizational-learning",
+              "founder-independence"
+            ]
+          },
+          "collect": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "domain",
+          "collect"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "tool_review": {
+      "type": "object",
+      "properties": {
+        "duplicate_labels": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "required_for_first_mission": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "declared": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "duplicate_labels",
+        "required_for_first_mission",
+        "declared"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "version",
+    "blueprint",
+    "goal",
+    "evidence_status",
+    "domains",
+    "roadmap",
+    "tool_review"
+  ],
+  "additionalProperties": false
+}

@@ -32,3 +32,5 @@ The [registry](registry/capabilities.json) distinguishes a referenced implementa
 Each blueprint specializes one mission, operating role, starting template, evidence priorities and suggested skill set. Each uses the same input schema, maturity gates and output receipt. The generated runtime remains unbound until the operator deliberately installs/configures a host.
 
 [Detailed upstream ownership and integration map](docs/portfolio-architecture.md) · [Original CoE design direction](https://github.com/Starlight-Intelligence/starlight-design-intelligence/blob/ac43168bb58587c4b92b84f05a8b2bab8e360df5/brand-packs/ai-coe/DESIGN.md)
+
+A reviewer can now [record an outcome and compare two missions](docs/mission-review.md). The human review binds local measurements to exact decision and evaluation bytes. The comparison produces an observed delta while leaving the proposed workflow change under maintainer control.
