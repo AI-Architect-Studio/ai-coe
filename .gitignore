@@ -11,3 +11,9 @@ link-checker-report.txt
 # Starlight/ACOS temporary files
 .starlight/
 .gemini/
+
+# Local activation and interpreter byproducts
+__pycache__/
+.ai-coe/
+.coe-stage-*/
+.ai-coe-activation.lock

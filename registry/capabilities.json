@@ -1,0 +1,454 @@
+{
+  "schema_version": "1.0.0",
+  "reviewed_on": "2026-11-25",
+  "scope": "Public dependencies and references. Inclusion never installs a package, enables a connector or grants access.",
+  "capabilities": [
+    {
+      "id": "skill-lifecycle",
+      "layer": "Governance",
+      "purpose": "Decide when a skill advances from intake through monitoring.",
+      "owner": "AI-Architect-Studio/ai-coe",
+      "published_repository": "AI-Architect-Studio/ai-coe",
+      "revision": "064826f3c6c9f662c6f3f9b364ff428b48efcd91",
+      "source_url": "https://github.com/AI-Architect-Studio/ai-coe/blob/064826f3c6c9f662c6f3f9b364ff428b48efcd91/operating-model/README.md",
+      "file_blob": "3d9ffd5cf8c30dade975ca2424863c49e0de92ed",
+      "license": "NOASSERTION",
+      "license_url": null,
+      "maturity": "operating-method",
+      "dependencies": [
+        "CoE owner",
+        "skill proposal",
+        "reviewer"
+      ],
+      "verification": "source-inspected",
+      "mode": "reference-only"
+    },
+    {
+      "id": "trust-policy",
+      "layer": "Governance",
+      "purpose": "Assign a provenance tier before choosing tool permissions.",
+      "owner": "AI-Architect-Studio/ai-coe",
+      "published_repository": "AI-Architect-Studio/ai-coe",
+      "revision": "064826f3c6c9f662c6f3f9b364ff428b48efcd91",
+      "source_url": "https://github.com/AI-Architect-Studio/ai-coe/blob/064826f3c6c9f662c6f3f9b364ff428b48efcd91/governance/trust-tiers.md",
+      "file_blob": "045d3d689888e1e5165fe2953c1d0674635883e1",
+      "license": "NOASSERTION",
+      "license_url": null,
+      "maturity": "operating-method",
+      "dependencies": [
+        "data boundary",
+        "tool inventory"
+      ],
+      "verification": "source-inspected",
+      "mode": "reference-only"
+    },
+    {
+      "id": "agent-design",
+      "layer": "Agent intelligence",
+      "purpose": "Draft a bounded portable capability with inputs, evaluation and ownership.",
+      "owner": "Starlight-Intelligence/starlight-agent-skills",
+      "published_repository": "Starlight-Intelligence/starlight-agent-skills",
+      "revision": "1e5577124c7c8ff48fceaf66037e0d5723cb41cf",
+      "source_url": "https://github.com/Starlight-Intelligence/starlight-agent-skills/blob/1e5577124c7c8ff48fceaf66037e0d5723cb41cf/skills/substrate/capability-foundry/SKILL.md",
+      "file_blob": "e31ee734d4431e8b377c45fb43089203afdad898",
+      "license": "MIT",
+      "license_url": "https://github.com/Starlight-Intelligence/starlight-agent-skills/blob/1e5577124c7c8ff48fceaf66037e0d5723cb41cf/LICENSE",
+      "maturity": "skill-source",
+      "dependencies": [
+        "owner-approved brief",
+        "agent host"
+      ],
+      "verification": "source-inspected",
+      "mode": "reference-only"
+    },
+    {
+      "id": "technical-due-diligence",
+      "layer": "Engineering",
+      "purpose": "Record a reversible architecture decision with evidence and alternatives.",
+      "owner": "frankxai/ai-architect",
+      "published_repository": "frankxai/ai-architect",
+      "revision": "1b924d55929bad73cbc44021247c541294316f87",
+      "source_url": "https://github.com/frankxai/ai-architect/blob/1b924d55929bad73cbc44021247c541294316f87/guide/labs/architecture-decision-record.md",
+      "file_blob": "131323f0300cf4cbbe689f609cb7685f27b9a807",
+      "license": "Apache-2.0",
+      "license_url": "https://github.com/frankxai/ai-architect/blob/1b924d55929bad73cbc44021247c541294316f87/LICENSE",
+      "maturity": "operating-method",
+      "dependencies": [
+        "technical proposal",
+        "independent reviewer"
+      ],
+      "verification": "source-inspected",
+      "mode": "reference-only"
+    },
+    {
+      "id": "persistent-context",
+      "layer": "Persistent context",
+      "purpose": "Describe a portable attested exchange between owner-controlled systems.",
+      "owner": "Starlight-Intelligence/Starlight-Intelligence-System",
+      "published_repository": "Starlight-Intelligence/Starlight-Intelligence-System",
+      "revision": "e159af3f94e93190c4a8ae127884d8f0d560dd5a",
+      "source_url": "https://github.com/Starlight-Intelligence/Starlight-Intelligence-System/blob/e159af3f94e93190c4a8ae127884d8f0d560dd5a/SIP.md",
+      "file_blob": "ab824226d2de3fd83befc1cf3bd0b729f388199b",
+      "license": "MIT",
+      "license_url": "https://github.com/Starlight-Intelligence/Starlight-Intelligence-System/blob/e159af3f94e93190c4a8ae127884d8f0d560dd5a/LICENSE",
+      "maturity": "protocol",
+      "dependencies": [
+        "SIP v1.1.1",
+        "operator-controlled storage"
+      ],
+      "verification": "source-inspected",
+      "mode": "reference-only"
+    },
+    {
+      "id": "memory-provider",
+      "layer": "Persistent context",
+      "purpose": "Connect a tenant-scoped recall and storage provider through a gateway.",
+      "owner": "Starlight-Intelligence/Starlight-Intelligence-System",
+      "published_repository": "Starlight-Intelligence/Starlight-Intelligence-System",
+      "revision": "e159af3f94e93190c4a8ae127884d8f0d560dd5a",
+      "source_url": "https://github.com/Starlight-Intelligence/Starlight-Intelligence-System/blob/e159af3f94e93190c4a8ae127884d8f0d560dd5a/packages/mcp-server/src/gateway.ts",
+      "file_blob": "0de41c8197c0d1446538768b12d05d8ca3eac3fa",
+      "license": "MIT",
+      "license_url": "https://github.com/Starlight-Intelligence/Starlight-Intelligence-System/blob/e159af3f94e93190c4a8ae127884d8f0d560dd5a/LICENSE",
+      "maturity": "implementation-source",
+      "dependencies": [
+        "@starlight-intelligence/core",
+        "operator endpoint",
+        "scoped credential"
+      ],
+      "verification": "source-inspected",
+      "mode": "reference-only"
+    },
+    {
+      "id": "model-routing",
+      "layer": "Model and compute",
+      "purpose": "Route requests with operator-owned provider bindings and fallback policy.",
+      "owner": "Starlight-Intelligence/Starlight-Intelligence-System",
+      "published_repository": "Starlight-Intelligence/Starlight-Intelligence-System",
+      "revision": "e159af3f94e93190c4a8ae127884d8f0d560dd5a",
+      "source_url": "https://github.com/Starlight-Intelligence/Starlight-Intelligence-System/blob/e159af3f94e93190c4a8ae127884d8f0d560dd5a/services/starlight-cloud-worker/src/llm/ai-gateway.ts",
+      "file_blob": "e0abac05bbededf604cab3545ee1b72f09d0ea72",
+      "license": "MIT",
+      "license_url": "https://github.com/Starlight-Intelligence/Starlight-Intelligence-System/blob/e159af3f94e93190c4a8ae127884d8f0d560dd5a/LICENSE",
+      "maturity": "implementation-source",
+      "dependencies": [
+        "Cloudflare Worker environment",
+        "operator-authorized provider configuration"
+      ],
+      "verification": "source-inspected",
+      "mode": "reference-only"
+    },
+    {
+      "id": "model-economics",
+      "layer": "Model and compute",
+      "purpose": "Calibrate deterministic model evaluation checkers before comparing spend or quality.",
+      "owner": "Starlight Intelligence (public harness export)",
+      "published_repository": "Starlight-Intelligence/starlight-ai-harness",
+      "revision": "bb6b9ce8423a9a60b95ae636253d05c8011c97d9",
+      "source_url": "https://github.com/Starlight-Intelligence/starlight-ai-harness/blob/bb6b9ce8423a9a60b95ae636253d05c8011c97d9/fleet/harness_eval.py",
+      "file_blob": "57995b97927ce0858b0f4736c2a363179d16897c",
+      "license": "MIT",
+      "license_url": "https://github.com/Starlight-Intelligence/starlight-ai-harness/blob/bb6b9ce8423a9a60b95ae636253d05c8011c97d9/LICENSE",
+      "maturity": "implementation-tested",
+      "dependencies": [
+        "Python 3.11+",
+        "pinned exported harness"
+      ],
+      "verification": "local-fixture-passed",
+      "mode": "optional-local-probe"
+    },
+    {
+      "id": "orchestration",
+      "layer": "Execution",
+      "purpose": "Coordinate single-operator work with a bounded escalation policy.",
+      "owner": "Starlight-Intelligence/Starlight-Intelligence-System",
+      "published_repository": "Starlight-Intelligence/Starlight-Intelligence-System",
+      "revision": "e159af3f94e93190c4a8ae127884d8f0d560dd5a",
+      "source_url": "https://github.com/Starlight-Intelligence/Starlight-Intelligence-System/blob/e159af3f94e93190c4a8ae127884d8f0d560dd5a/src/orchestration/starlight-queen.ts",
+      "file_blob": "508a888716cdd5b0a93eb13095c5dfa06306c30f",
+      "license": "MIT",
+      "license_url": "https://github.com/Starlight-Intelligence/Starlight-Intelligence-System/blob/e159af3f94e93190c4a8ae127884d8f0d560dd5a/LICENSE",
+      "maturity": "implementation-source",
+      "dependencies": [
+        "SIS runtime",
+        "authorized execution targets"
+      ],
+      "verification": "source-inspected",
+      "mode": "reference-only"
+    },
+    {
+      "id": "software-factory",
+      "layer": "Execution",
+      "purpose": "Route an approved issue through analysis, build and draft review.",
+      "owner": "Starlight-Intelligence/starlight-factory",
+      "published_repository": "Starlight-Intelligence/starlight-factory",
+      "revision": "6bc5febab95de4c05fa08b164f544650f6aa11aa",
+      "source_url": "https://github.com/Starlight-Intelligence/starlight-factory/blob/6bc5febab95de4c05fa08b164f544650f6aa11aa/README.md",
+      "file_blob": "b64f7688cf2d6fea1bac1989af367a5fcb397fe2",
+      "license": "MIT",
+      "license_url": "https://github.com/Starlight-Intelligence/starlight-factory/blob/6bc5febab95de4c05fa08b164f544650f6aa11aa/LICENSE",
+      "maturity": "upstream-template",
+      "dependencies": [
+        "Vercel eve runtime",
+        "authorized GitHub or Linear connection",
+        "human merge owner"
+      ],
+      "verification": "source-inspected",
+      "mode": "reference-only"
+    },
+    {
+      "id": "research-intelligence",
+      "layer": "Research",
+      "purpose": "Check an individual claim against source pointers and mark uncertainty.",
+      "owner": "Starlight-Intelligence/starlight-agent-skills",
+      "published_repository": "Starlight-Intelligence/starlight-agent-skills",
+      "revision": "1e5577124c7c8ff48fceaf66037e0d5723cb41cf",
+      "source_url": "https://github.com/Starlight-Intelligence/starlight-agent-skills/blob/1e5577124c7c8ff48fceaf66037e0d5723cb41cf/skills/research/claim-verification/SKILL.md",
+      "file_blob": "ee5f8cc53c77011c6b669270445cf39fa6a47329",
+      "license": "MIT",
+      "license_url": "https://github.com/Starlight-Intelligence/starlight-agent-skills/blob/1e5577124c7c8ff48fceaf66037e0d5723cb41cf/LICENSE",
+      "maturity": "skill-source",
+      "dependencies": [
+        "claim",
+        "permissioned primary sources",
+        "agent host"
+      ],
+      "verification": "source-inspected",
+      "mode": "reference-only"
+    },
+    {
+      "id": "research-methods",
+      "layer": "Research",
+      "purpose": "Structure evidence synthesis and reproducibility across research workflows.",
+      "owner": "frankxai/research-intelligence-systems",
+      "published_repository": "frankxai/research-intelligence-systems",
+      "revision": "4f80d5907cccf65e98dacdb705550988c7eeb682",
+      "source_url": "https://github.com/frankxai/research-intelligence-systems/blob/4f80d5907cccf65e98dacdb705550988c7eeb682/README.md",
+      "file_blob": "c25c0caa5f0af1e7df182b4e24715f6b41fd849b",
+      "license": "NOASSERTION",
+      "license_url": null,
+      "maturity": "reference",
+      "dependencies": [
+        "owner-selected research pack",
+        "source evidence"
+      ],
+      "verification": "source-inspected",
+      "mode": "reference-only"
+    },
+    {
+      "id": "creative-production",
+      "layer": "Execution",
+      "purpose": "Select a creator production skill and preserve original source rights.",
+      "owner": "frankxai/gencreator-skills",
+      "published_repository": "frankxai/gencreator-skills",
+      "revision": "80fe5a5abd824f74e85737522632423bbae786da",
+      "source_url": "https://github.com/frankxai/gencreator-skills/blob/80fe5a5abd824f74e85737522632423bbae786da/README.md",
+      "file_blob": "effc6d8d592e00b60d22227d4068c765f9cfeacc",
+      "license": "MIT",
+      "license_url": "https://github.com/frankxai/gencreator-skills/blob/80fe5a5abd824f74e85737522632423bbae786da/LICENSE",
+      "maturity": "skill-source",
+      "dependencies": [
+        "creator-owned inputs",
+        "compatible upstream host",
+        "per-skill license review"
+      ],
+      "verification": "source-inspected",
+      "mode": "reference-only"
+    },
+    {
+      "id": "publishing",
+      "layer": "Execution",
+      "purpose": "Produce a release candidate from approved editorial source material.",
+      "owner": "Starlight-Intelligence/starlight-agent-skills",
+      "published_repository": "Starlight-Intelligence/starlight-agent-skills",
+      "revision": "1e5577124c7c8ff48fceaf66037e0d5723cb41cf",
+      "source_url": "https://github.com/Starlight-Intelligence/starlight-agent-skills/blob/1e5577124c7c8ff48fceaf66037e0d5723cb41cf/skills/studios/publishing-studio/SKILL.md",
+      "file_blob": "aad404c599ad31689f9a8ed27e271a4886c026d9",
+      "license": "MIT",
+      "license_url": "https://github.com/Starlight-Intelligence/starlight-agent-skills/blob/1e5577124c7c8ff48fceaf66037e0d5723cb41cf/LICENSE",
+      "maturity": "skill-source",
+      "dependencies": [
+        "rights-cleared source",
+        "release reviewer",
+        "agent host"
+      ],
+      "verification": "source-inspected",
+      "mode": "reference-only"
+    },
+    {
+      "id": "publishing-governance",
+      "layer": "Governance",
+      "purpose": "Separate a release's source, editorial review and rights responsibility.",
+      "owner": "frankxai/ai-coe-content-creation",
+      "published_repository": "frankxai/ai-coe-content-creation",
+      "revision": "c1c73267c36a8c82ba4ece090226aa38660e8042",
+      "source_url": "https://github.com/frankxai/ai-coe-content-creation/blob/c1c73267c36a8c82ba4ece090226aa38660e8042/README.md",
+      "file_blob": "48f57c22f59643d72768b23aa9a01338fce7fd3d",
+      "license": "LicenseRef-Reserved",
+      "license_url": "https://github.com/frankxai/ai-coe-content-creation/blob/c1c73267c36a8c82ba4ece090226aa38660e8042/LICENSE",
+      "maturity": "reference",
+      "dependencies": [
+        "rights holder",
+        "source evidence",
+        "editorial reviewer"
+      ],
+      "verification": "source-inspected",
+      "mode": "reference-only"
+    },
+    {
+      "id": "worldbuilding",
+      "layer": "Execution",
+      "purpose": "Introduce original-world canon, ownership and continuity into a creative mission.",
+      "owner": "Arcanea-Labs/Arcanea",
+      "published_repository": "Arcanea-Labs/Arcanea",
+      "revision": "afc2f17d46bd2659e296edc8b4a2dc4acc0b5cfe",
+      "source_url": "https://github.com/Arcanea-Labs/Arcanea/blob/afc2f17d46bd2659e296edc8b4a2dc4acc0b5cfe/README.md",
+      "file_blob": "212520f35436a48d610ec58b280fe541dfff365b",
+      "license": "LicenseRef-Reserved",
+      "license_url": "https://github.com/Arcanea-Labs/Arcanea/blob/afc2f17d46bd2659e296edc8b4a2dc4acc0b5cfe/LICENSE",
+      "maturity": "reference",
+      "dependencies": [
+        "creator-owned fictional world",
+        "rights clearance"
+      ],
+      "verification": "source-inspected",
+      "mode": "reference-only"
+    },
+    {
+      "id": "design-review",
+      "layer": "Governance",
+      "purpose": "Review CoE design against the canonical Academy and CoE promise.",
+      "owner": "Starlight-Intelligence/starlight-design-intelligence",
+      "published_repository": "Starlight-Intelligence/starlight-design-intelligence",
+      "revision": "ac43168bb58587c4b92b84f05a8b2bab8e360df5",
+      "source_url": "https://github.com/Starlight-Intelligence/starlight-design-intelligence/blob/ac43168bb58587c4b92b84f05a8b2bab8e360df5/brand-packs/ai-coe/BRAND.md",
+      "file_blob": "6f0ccaa5d4930bbc56edf9af8ed9dc29a5290244",
+      "license": "NOASSERTION",
+      "license_url": null,
+      "maturity": "reference",
+      "dependencies": [
+        "current brand steward",
+        "approved assets"
+      ],
+      "verification": "source-inspected",
+      "mode": "reference-only"
+    },
+    {
+      "id": "commercial-workflow",
+      "layer": "Commercial intelligence",
+      "purpose": "Turn an owned catalogue and customer request into a local reviewable quote draft.",
+      "owner": "frankxai/agentic-income-skills",
+      "published_repository": "frankxai/agentic-income-skills",
+      "revision": "d0346f9392772ec5d2a32d33456831c34640dd95",
+      "source_url": "https://github.com/frankxai/agentic-income-skills/blob/d0346f9392772ec5d2a32d33456831c34640dd95/docs/quote-desk.md",
+      "file_blob": "90e1bb115bc70537ecc45bdd78e85dccdbe5aa39",
+      "license": "MIT",
+      "license_url": "https://github.com/frankxai/agentic-income-skills/blob/d0346f9392772ec5d2a32d33456831c34640dd95/LICENSE",
+      "maturity": "implementation-tested",
+      "dependencies": [
+        "Node.js 20+",
+        "permissioned request",
+        "approved catalogue",
+        "named owner"
+      ],
+      "verification": "local-fixture-passed",
+      "mode": "optional-local-probe"
+    },
+    {
+      "id": "personal-development",
+      "layer": "Human intelligence",
+      "purpose": "Identify a personal system gap and choose one artifact as evidence of progress.",
+      "owner": "frankxai/realityarchitect",
+      "published_repository": "frankxai/realityarchitect",
+      "revision": "6eb9c880d26a95acf48a5e9619cb06446476a7d4",
+      "source_url": "https://github.com/frankxai/realityarchitect/blob/6eb9c880d26a95acf48a5e9619cb06446476a7d4/README.md",
+      "file_blob": "e2b657ae1a7c5a61acb2f54a7feea073da7d7ed4",
+      "license": "MIT",
+      "license_url": "https://github.com/frankxai/realityarchitect/blob/6eb9c880d26a95acf48a5e9619cb06446476a7d4/LICENSE",
+      "maturity": "operating-method",
+      "dependencies": [
+        "personal objective",
+        "operator-owned journal"
+      ],
+      "verification": "source-inspected",
+      "mode": "reference-only"
+    },
+    {
+      "id": "human-agent-development",
+      "layer": "Continuous evolution",
+      "purpose": "Develop human judgment through a practice mission and artifact-level feedback.",
+      "owner": "Starlight-Intelligence/starlight-academy-plugin",
+      "published_repository": "Starlight-Intelligence/starlight-academy-plugin",
+      "revision": "01eab519152c5d82368fbe0de46d28ef5718032f",
+      "source_url": "https://github.com/Starlight-Intelligence/starlight-academy-plugin/blob/01eab519152c5d82368fbe0de46d28ef5718032f/README.md",
+      "file_blob": "2a25c704bb0552e767b1a876ec41010c05fd3250",
+      "license": "Apache-2.0",
+      "license_url": "https://github.com/Starlight-Intelligence/starlight-academy-plugin/blob/01eab519152c5d82368fbe0de46d28ef5718032f/LICENSE",
+      "maturity": "skill-source",
+      "dependencies": [
+        "learning objective",
+        "learner artifact",
+        "facilitator or compatible host"
+      ],
+      "verification": "source-inspected",
+      "mode": "reference-only"
+    },
+    {
+      "id": "architecture-education",
+      "layer": "Human intelligence",
+      "purpose": "Learn system architecture in an agent-native lab.",
+      "owner": "frankxai/ai-architect-academy",
+      "published_repository": "frankxai/ai-architect-academy",
+      "revision": "ba3ddce3905acdb00c25343c583b02150e559369",
+      "source_url": "https://github.com/frankxai/ai-architect-academy/blob/ba3ddce3905acdb00c25343c583b02150e559369/README.md",
+      "file_blob": "5546363ef51eae457db7f11e6dc6d854bbe9681c",
+      "license": "FSL-1.1-ALv2",
+      "license_url": "https://github.com/frankxai/ai-architect-academy/blob/ba3ddce3905acdb00c25343c583b02150e559369/LICENSE",
+      "maturity": "reference",
+      "dependencies": [
+        "coding environment",
+        "learner-owned repo"
+      ],
+      "verification": "source-inspected",
+      "mode": "reference-only"
+    },
+    {
+      "id": "capability-graph",
+      "layer": "Continuous evolution",
+      "purpose": "Link a human skill to a proof artifact and future contribution.",
+      "owner": "Starlight-Intelligence/starlight-knowledge-tree",
+      "published_repository": "Starlight-Intelligence/starlight-knowledge-tree",
+      "revision": "5ad5604dc8914a54644d9a3edc7005af8fc3ab39",
+      "source_url": "https://github.com/Starlight-Intelligence/starlight-knowledge-tree/blob/5ad5604dc8914a54644d9a3edc7005af8fc3ab39/README.md",
+      "file_blob": "d0fe6e3f0632e23a71319826d60f612864b225f6",
+      "license": "MIT",
+      "license_url": "https://github.com/Starlight-Intelligence/starlight-knowledge-tree/blob/5ad5604dc8914a54644d9a3edc7005af8fc3ab39/LICENSE",
+      "maturity": "reference",
+      "dependencies": [
+        "evidence artifact",
+        "capability vocabulary"
+      ],
+      "verification": "source-inspected",
+      "mode": "reference-only"
+    },
+    {
+      "id": "release-evidence",
+      "layer": "Continuous evolution",
+      "purpose": "Measure system behavior with versioned scorecard lanes.",
+      "owner": "Starlight-Intelligence/Starlight-Intelligence-System (Proving Ground)",
+      "published_repository": "Starlight-Intelligence/starlight-evals",
+      "revision": "3d06af98689c68fec8111acea718812eb8ae7274",
+      "source_url": "https://github.com/Starlight-Intelligence/starlight-evals/blob/3d06af98689c68fec8111acea718812eb8ae7274/SPEC.md",
+      "file_blob": "150cc4a1a9d9c804d717926ff2f7a6892221cae6",
+      "license": "MIT",
+      "license_url": "https://github.com/Starlight-Intelligence/starlight-evals/blob/3d06af98689c68fec8111acea718812eb8ae7274/LICENSE",
+      "maturity": "protocol",
+      "dependencies": [
+        "SIS Proving Ground methodology",
+        "current dated local evidence"
+      ],
+      "verification": "source-inspected",
+      "mode": "reference-only"
+    }
+  ]
+}

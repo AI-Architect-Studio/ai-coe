@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="228" viewBox="0 0 960 228" role="img" aria-labelledby="title desc">
+<title id="title">How a mission becomes an owner-reviewed decision</title>
+<desc id="desc">Source files and a human goal enter a local mission. The mission produces a decision brief and an evidence receipt. The owner approves the next experiment.</desc>
+<rect width="960" height="228" rx="12" fill="#eff6f5"/>
+<g fill="#142c33" font-family="system-ui, sans-serif"><text x="32" y="40" font-size="14" letter-spacing="2">AI CENTER OF EXCELLENCE</text><text x="31" y="83" font-size="32" font-weight="600">Inside a local mission</text></g>
+<g stroke="#007c85" stroke-width="2" fill="none"><path d="M192 132h46m-7-5 7 5-7 5 M421 132h35v-20h31m-7-5 7 5-7 5 M456 132v35h31m-7-5 7 5-7 5 M667 112h24v55h-24 M691 132h49m-7-5 7 5-7 5"/></g>
+<g fill="#fff" stroke="#97b6b5"><rect x="32" y="110" width="160" height="44" rx="5"/><rect x="243" y="110" width="178" height="44" rx="5"/><rect x="491" y="93" width="176" height="39" rx="5"/><rect x="491" y="148" width="176" height="39" rx="5"/></g>
+<rect x="745" y="110" width="181" height="44" rx="5" fill="#163c44"/>
+<g font-family="system-ui, sans-serif" font-size="16" fill="#142c33" text-anchor="middle"><text x="112" y="138">Goal + sources</text><text x="332" y="138">Run the mission</text><text x="579" y="118">Decision brief</text><text x="579" y="173">Evidence receipt</text><text x="836" y="138" fill="white">Owner review</text></g>
+<text x="33" y="203" fill="#385d63" font-family="system-ui, sans-serif" font-size="14">The owner decides which experiment runs next and which knowledge can leave the workspace.</text></svg>

@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "blueprint": "personal",
+  "mission": "Choose one learning practice for the coming week.",
+  "artifact": "learning decision",
+  "review_question": "What would change my mind after a week of practice?",
+  "role": "agents/chief-of-staff.md",
+  "template": "templates/company-of-one/README.md",
+  "priority_domains": [
+    "human-expertise",
+    "knowledge-context"
+  ],
+  "skills": [
+    "ai-coe-assessment",
+    "claim-verification",
+    "simulation-lab-builder"
+  ]
+}

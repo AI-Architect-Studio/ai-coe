@@ -1,0 +1,24 @@
+{
+  "claim": "The founder interviews establish that small studios will pay for a decision-handoff integration.",
+  "verdict": "unverifiable",
+  "confidence": "high",
+  "evidence": [
+    {
+      "quote": "I lose the supplier decision every time somebody hands the project over.",
+      "source": "examples/founder/evidence/interview-a.txt"
+    },
+    {
+      "quote": "A new project owner spent Monday reconstructing why we picked that vendor.",
+      "source": "examples/founder/evidence/interview-b.txt"
+    },
+    {
+      "quote": "Our existing issue template already handles most handoffs.",
+      "source": "examples/founder/evidence/interview-c.txt"
+    }
+  ],
+  "rationale": "Two operators describe a retrieval problem. A third already has a partial substitute. None of the three discusses price, a purchase or an integration requirement. The available evidence supports a manual pilot to learn whether the handoff helps.",
+  "caveats": [
+    "These are synthetic interviews. The verdict concerns what the fixture establishes.",
+    "High confidence refers to the evidentiary gap. Actual willingness to pay remains unknown."
+  ]
+}

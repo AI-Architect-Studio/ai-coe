@@ -1,0 +1,191 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:starlight:coe:intake:1",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "integer",
+      "const": 1
+    },
+    "audience": {
+      "type": "string",
+      "enum": [
+        "personal",
+        "creator",
+        "founder",
+        "enterprise"
+      ]
+    },
+    "owner": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 120
+    },
+    "goal": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 600
+    },
+    "tools": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 100
+      },
+      "minItems": 0,
+      "maxItems": 32,
+      "uniqueItems": false
+    },
+    "sources": {
+      "type": "object",
+      "minProperties": 1,
+      "maxProperties": 128,
+      "propertyNames": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 48,
+        "pattern": "^[a-z][a-z0-9-]{0,47}$"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "file": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 240
+          },
+          "excerpt": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1500
+          }
+        },
+        "required": [
+          "file",
+          "excerpt"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 48,
+            "pattern": "^[a-z][a-z0-9-]{0,47}$"
+          },
+          "action": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 600
+          },
+          "experiment": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          },
+          "supports": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 48,
+              "pattern": "^[a-z][a-z0-9-]{0,47}$"
+            },
+            "minItems": 0,
+            "maxItems": 64,
+            "uniqueItems": true
+          },
+          "challenges": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 48,
+              "pattern": "^[a-z][a-z0-9-]{0,47}$"
+            },
+            "minItems": 0,
+            "maxItems": 64,
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "id",
+          "action",
+          "experiment",
+          "supports",
+          "challenges"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "maxItems": 32,
+      "uniqueItems": false
+    },
+    "attestations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "domain": {
+            "type": "string",
+            "enum": [
+              "human-expertise",
+              "agent-expertise",
+              "knowledge-context",
+              "compute-economics",
+              "engineering-execution",
+              "research-quality",
+              "creative-production",
+              "commercial-execution",
+              "governance-security",
+              "organizational-learning",
+              "founder-independence"
+            ]
+          },
+          "gate": {
+            "type": "string",
+            "enum": [
+              "observed",
+              "repeated",
+              "connected",
+              "governed",
+              "improved"
+            ]
+          },
+          "source": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 48,
+            "pattern": "^[a-z][a-z0-9-]{0,47}$"
+          }
+        },
+        "required": [
+          "domain",
+          "gate",
+          "source"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 256,
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "version",
+    "audience",
+    "owner",
+    "goal",
+    "tools",
+    "sources",
+    "candidates",
+    "attestations"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "blueprint": "founder",
+  "mission": "Choose one customer problem for a validation experiment.",
+  "artifact": "validation brief",
+  "review_question": "What behavior would justify another week of investment?",
+  "role": "agents/growth-agent.md",
+  "template": "templates/company-of-one/README.md",
+  "priority_domains": [
+    "commercial-execution",
+    "research-quality"
+  ],
+  "skills": [
+    "ai-coe-assessment",
+    "claim-verification",
+    "capability-foundry"
+  ],
+  "owner": "Example studio",
+  "tools": [
+    "Git",
+    "Codex"
+  ],
+  "external_actions": "require separate owner approval",
+  "agent_runtime": "unbound"
+}

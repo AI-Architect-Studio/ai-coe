@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "audience": "founder",
+  "owner": "Example studio",
+  "goal": "Decide whether to pilot a written decision handoff for small studios.",
+  "tools": [
+    "Git",
+    "Codex"
+  ],
+  "sources": {
+    "interview-a": {
+      "excerpt": "I lose the supplier decision every time somebody hands the project over.",
+      "file": "evidence/bd78a4687b7b63f8953b55ea11dda13e93d975b3395b75ec6e23ffb9f3fc05b8.txt"
+    },
+    "interview-b": {
+      "excerpt": "A new project owner spent Monday reconstructing why we picked that vendor.",
+      "file": "evidence/e757ae7e852155ab586b803d0ae732f2fdfefc1af61cfbd818a8cb440e6f771c.txt"
+    },
+    "interview-c": {
+      "excerpt": "Our existing issue template already handles most handoffs.",
+      "file": "evidence/40319654b2dc31d2fd32ac7a2a7788588ea6160cb5c7cbf6f64239e696de450e.txt"
+    },
+    "studio-note": {
+      "excerpt": "We want to test demand before writing an integration.",
+      "file": "evidence/6719ac4411ec1cf1ee7021ed401a8235200451e002ac1aea630f2c82de5e45a1.txt"
+    }
+  },
+  "candidates": [
+    {
+      "id": "handoff",
+      "action": "Offer two studios a one-week decision handoff pilot.",
+      "supports": [
+        "interview-a",
+        "interview-b"
+      ],
+      "challenges": [
+        "interview-c"
+      ],
+      "experiment": "Ask two operators to use a one-page handoff. Observe whether the next owner can recover the decision unaided."
+    },
+    {
+      "id": "integration",
+      "action": "Build a project-management integration.",
+      "supports": [],
+      "challenges": [
+        "studio-note"
+      ],
+      "experiment": "Ask pilot participants where a second manual entry causes a missed handoff."
+    }
+  ],
+  "attestations": [
+    {
+      "domain": "commercial-execution",
+      "gate": "observed",
+      "source": "interview-a"
+    },
+    {
+      "domain": "human-expertise",
+      "gate": "observed",
+      "source": "studio-note"
+    }
+  ]
+}
